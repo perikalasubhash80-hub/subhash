@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "Courier Prime", "Courier New", Courier, monospace;
+
+  --color-neon-pink: #ff00ff;
+  --color-neon-cyan: #00f3ff;
+  --color-neon-green: #39ff14;
+  --color-dark-bg: #050505;
+  --color-dark-surface: #121212;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark-bg);
+    color: #e0e0e0;
+    font-family: var(--font-mono);
+  }
+}
+
+.neon-border-cyan {
+  box-shadow: 0 0 10px var(--color-neon-cyan), inset 0 0 5px var(--color-neon-cyan);
+  border: 1px solid var(--color-neon-cyan);
+}
+
+.neon-border-pink {
+  box-shadow: 0 0 10px var(--color-neon-pink), inset 0 0 5px var(--color-neon-pink);
+  border: 1px solid var(--color-neon-pink);
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 8px var(--color-neon-cyan);
+  color: var(--color-neon-cyan);
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 8px var(--color-neon-pink);
+  color: var(--color-neon-pink);
+}
+
+.grid-bg {
+  background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.snake-cell {
+  background: var(--color-neon-green);
+  box-shadow: 0 0 8px var(--color-neon-green);
+  border-radius: 2px;
+}
+
+.apple-cell {
+  background: #ff003c;
+  box-shadow: 0 0 12px #ff003c;
+  border-radius: 50%;
+}

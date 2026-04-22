@@ -1,0 +1,6 @@
+{
+  "name": "Synth-Snake",
+  "description": "An elegant dark neon arcade experience with a built-in synth-wave queue.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
